@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {# <link rel="icon" href="/img/favicon.ico"> #}
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/site.css">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <div class="container mt-8 mb-8 mx-auto">
+            <h1 class="text-5xl">Elevenpack</h1>
+        </div>
+        {{ content | safe }}
+        {% include "footer.html" %}
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
