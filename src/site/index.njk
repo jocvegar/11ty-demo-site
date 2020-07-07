@@ -1,21 +1,12 @@
 ---
-title: Elevenpack
+title: Hola
 layout: default
+logo: assets/img/cactus_1.png
 ---
 
 <div class="container mx-auto">
-    <h1> {{title}} </h1>
-    <p>
-        This page is generated from the template <span class="code">src/site/index.njk</span>, using the default layout
-        <span class="code">src/site/_includes/layouts/default.njk</span>.
-    </p>
-    <p class="my-4">
-        Styles can be found under <span class="code">src/css</span> and the javascript under <span class="code">src/js</span>.
-        The <span class="code">src/vendor</span> folder will be copied verbatim when building the website and is meant for any
-        external dependencies that you don't want to add to your build process.
-    </p>
-    <p class="my-4">Any images should be placed under <span class="code">src/img</span> and this folder will be copied verbatim when building.</p>
-    <p>If you want to change Eleventy's configuration in any way, see <span class="code">.eleventy.js</span>.
-
-    <h3 class="mt-8 text-lg">Check out the <a href="https://github.com/deviousdodo/elevenpack#elevenpack" class="text-teal-600">README</a> for more docs.</h3>
+    <img src="{{logo}}" alt="home" class="h-40 w-40 md:h-48 md:w-48 mx-auto my-4">
+    <h1 class="uppercase text-3xl text-center font-bold antialiased text-gray-200">{{title}}</h1>
+    <h3 class="my-2 text-2xl text-center text-gray-100 font-thin">Esto es una prueba usando 
+    <a href="https://www.11ty.dev/" target="_blank" class="hover:text-green-600">11ty</a> con <a href="https://tailwindcss.com/" target="_blank" class="hover:text-green-600">Tailwind css</a></h3>
 </div>

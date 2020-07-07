@@ -1,0 +1,41 @@
+---
+title: Contacto
+layout: default
+logo: /assets/img/cactus_3.png
+---
+
+<div class="flex flex-col items-center container mx-auto ">
+    <img src="{{logo}}" alt="about" class="h-40 w-40 md:h-40 md:w-40 mx-auto my-4">
+
+    <div class="w-screen max-w-lg px-4">
+        <form action="https://formspree.io/mqkyywkz" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                    Nombre    
+                </label>
+                <input type="text" name="name" id="name" placeholder="nombre" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3  leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Correo
+                </label>
+                <input type="text" name="_replyto" id="email" placeholder="yo@correo.com" 
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3  leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="mensaje">
+                    Mensaje
+                </label>
+                <textarea id="mensaje" name="message"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">
+                </textarea>    
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>    
